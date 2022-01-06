@@ -21,49 +21,39 @@
   </head>
   <body>
     <header>
-      <nav class="row">
-        <div class="col" style="margin: 20px">
+      <nav>
+        <div style="margin: 10px">
           <img src="./sources/1x/Logo.png" alt="" style="width: 30px" />
-          <span
-            style="
-              padding-left: 10px;
-              font-weight: 500;
-              font-size: 20px;
-              color: gray;
-            "
-            >Company Logo</span
-          >
+          <span>Company Logo</span>
         </div>
-        <div class="col">
-          <button id="btn1" onclick="menu_open()" class="menu1">
-            <i class="fas fa-bars"></i>
-          </button>
-          <button id="btn2" onclick="menu_close()" class="menu2">
-            <i class="fas fa-chevron-up"></i>
-          </button>
-          <ul id="nav_bar" class="nav_link">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="">How It Works</a>
-            </li>
-            <li>
-              <a href="#">FAQ</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+        <button id="btn1" onclick="menu_open()" class="menu1">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button id="btn2" onclick="menu_close()" class="menu2">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <ul id="nav_bar" class="nav_link">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="">How It Works</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <div class="banner col col-xs-12 col-sm-12 col-lg-12 col-xl-12">
       <p>
-        <span style="color: rgb(127, 204, 204); font-weight: 500">Company</span>
+        <span>Company</span>
         is an innovative e-commerce platform design for retailers and pharmacies
         across thr US to purchase unique gifts and merchandise for the front-end
         of pharmacy
@@ -71,19 +61,19 @@
     </div>
     <div class="category-container">
       <div class="category">
-        <h2 style="color: whitesmoke">Category</h2>
-        <p style="color: whitesmoke">with great offers</p>
+        <h2>Category</h2>
+        <p>with great offers</p>
       </div>
     </div>
     <div class="container">
-      <div class="row gx-5">
+      <div class="row">
         <div class="col-12 col-xl-4 col-lg-4 py-5">
           <div
             class="p-3 card_outer"
             style="background-image: url(./sources/Beauty.jpg)"
           >
             <div class="card_inner">
-              <i>All Natural Non Toxic</i>
+              <span>All Natural Non Toxic</span>
               <h4>Best of Beauty</h4>
               <button>SHOP NOW</button>
             </div>
@@ -95,7 +85,7 @@
             style="background-image: url(./sources/Supplements.jpg)"
           >
             <div class="card_inner">
-              <i>Best Deals For</i>
+              <span>Best Deals For</span>
               <h4>Supplements & Vitamins</h4>
               <button>SHOP NOW</button>
             </div>
@@ -107,7 +97,7 @@
             style="background-image: url(./sources/Fitness.jpg)"
           >
             <div class="card_inner">
-              <i>Everyday Savings On</i>
+              <span>Everyday Savings On</span>
               <h4>Fitness and Nutrition</h4>
               <button>SHOP NOW</button>
             </div>
@@ -116,33 +106,28 @@
       </div>
     </div>
     <div class="container">
-      <div class="row gx-5" style="min-height: 400px">
-        <div class="col col-sm-12 col-lg-4 col-xl-4">
-          <div
-            class="p-3"
-            style="
-              background-color: rgba(81, 195, 196, 255);
-              height: 400px;
-              display: flex;
-              align-items: center;
-              flex-direction: column;
-              justify-content: center;
-            "
-          >
-            <h3 style="color: whitesmoke">Employee</h3>
-            <p style="color: whitesmoke">Information</p>
+      <div class="row" style="min-height: 400px; width: 100%">
+        <div class="col col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div class="employee">
+            <h3>Employee</h3>
+            <p>Information</p>
             <img src="./sources/1x/Employee.png" alt="" style="width: 40%" />
           </div>
         </div>
         <div
-          class="col col-sm-12 col-lg-8 col-xl-8"
+          class="col px-5 col-sm-12 col-lg-8 col-xl-8"
           style="background-color: rgba(109, 109, 109, 255)"
         >
-          <form class="row" style="overflow: auto">
-            <div class="col px-5 py-4 form-1">
+          <form class="row" style="width: 100%; overflow: auto">
+            <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-6 py-4 form-1">
               <label for="name">Full Name *</label>
               <br />
-              <input type="text" name="name" placeholder=" Type Your Name" />
+              <input
+                class="field"
+                type="text"
+                name="name"
+                placeholder=" Type Your Name"
+              />
               <br />
               <label for="radio">Gender *</label>
               <br />
@@ -153,22 +138,25 @@
               <br />
               <label for="mobile">Mobile *</label>
               <br />
-              <input type="text" name="mobile" placeholder=" Mobile Number" />
+              <input
+                class="field"
+                type="text"
+                name="mobile"
+                placeholder=" Mobile Number"
+              />
               <br />
               <label for="qualification">Educational Qualification </label>
               <br />
               <input
+                class="field"
                 type="text"
                 name="qualification"
-                placeholder=" Enter Your Qualification"
+                placeholder="Qualification"
               />
               <br />
               <label for="state">State</label>
               <br />
-              <select
-                name="state"
-                style="width: 190px; outline: none; color: gray"
-              >
+              <select name="state">
                 <option value="select">Select</option>
                 <option value="andra pradesh">Andhra Pradesh</option>
                 <option value="tamilnadu">Tamilnadu</option>
@@ -176,7 +164,7 @@
                 <option value="karnataka">Karnataka</option>
               </select>
             </div>
-            <div class="col form-2 px-5 py-4">
+            <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-6 form-2 py-4">
               <label for="address">Address *</label>
               <br />
               <textarea placeholder="Type Your Address"></textarea>
@@ -193,7 +181,7 @@
               <br />
               <input type="checkbox" name="malayalam" />
               <label for="english">Malayalam</label>
-              <br /><br /><br /><br />
+              <br /><br /><br /><br /><br />
               <button>Reset</button>
               <button>Submit</button>
             </div>
@@ -202,12 +190,12 @@
       </div>
     </div>
     <div class="container py-5">
-      <div class="row">
+      <div class="row" style="width: 100%">
         <h3 style="color: rgba(81, 195, 196, 255); font-weight: 500">
           Employee Details
         </h3>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" style="width: 100%">
         <div class="table-responsive">
           <table class="table border align-middle">
             <thead>
@@ -291,7 +279,7 @@
       </div>
     </div>
     <div style="background-color: rgba(236, 236, 236, 255)">
-      <div class="row justify-content-center py-5">
+      <div class="row justify-content-center py-5" style="width: 100%">
         <div class="col col-lg-2 col-xl-2">
           <ul>
             <b> Other Links </b>
@@ -317,17 +305,16 @@
         <div class="col col-lg-2 col-xl-2">
           <ul>
             <b> Stay Connected </b>
-            <li>Site Requirements</li>
-            <li>User Agreement</li>
-            <li>privacy policy</li>
+            <br>
+            <img src="./sources/1x/Linkedin.png" alt="">
+            <img src="./sources/1x/Twitt.png" alt="">
+            <img src="./sources/1x/FB.png" alt="">
           </ul>
         </div>
       </div>
     </div>
-    <footer style="background-color: gray; text-align: center">
-      <p style="font-size: 10px; padding: 15px; color: whitesmoke">
-        copyright 2019-company | All Rights Reserved
-      </p>
+    <footer>
+      <p>copyright 2019-company | All Rights Reserved</p>
     </footer>
     <script>
       function menu_open() {
