@@ -157,6 +157,15 @@ ul li {
 td i {
   color: red;
 }
+th {
+  font-weight: 500;
+  color: gray;
+}
+td {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
 tr:nth-child(even) {
   background-color: rgb(223, 219, 219);
 }
@@ -169,6 +178,16 @@ footer p {
   padding: 15px;
   color: whitesmoke;
 }
+#myBtn {
+  border: none;
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(81, 195, 196, 255);
+  color: whitesmoke;
+  font-weight: 500;
+  right: 5%;
+}
+
 @media (max-width: 768px) {
   .nav_link {
     display: none;
@@ -215,10 +234,11 @@ footer p {
   option {
     font-size: 12px;
   }
-  .menu1{
+  .menu1 {
     display: block;
   }
-  .menu1,.menu2  {
+  .menu1,
+  .menu2 {
     margin-top: 10px;
     border: none;
     border-radius: 5px;
@@ -227,7 +247,6 @@ footer p {
     float: right;
     margin-right: 20%;
     margin-top: -50px;
-    
   }
   .menu1 i,
   .menu2 i {
